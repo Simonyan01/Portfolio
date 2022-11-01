@@ -35,6 +35,7 @@ p {
   margin-top: 5px;
   line-height: 2.5rem;
   letter-spacing: 0.05rem;
+  cursor: default;
 }
 
 .section-title {
@@ -61,7 +62,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 30px;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
   transition-property: background-color, color;
 }
 
@@ -137,8 +138,11 @@ p {
   text-transform: uppercase;
   padding: 20px;
   display: block;
+  transition: color 0.3s linear;
 }
-
+#header .nav-list ul li:hover {
+  color: black;
+}
 #header .nav-list ul a::after {
   content: attr(data-after);
   position: absolute;
@@ -262,6 +266,7 @@ p {
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
+  cursor: default;
 }
 
 #hero h1:nth-child(1) {
@@ -414,6 +419,7 @@ p {
   flex-direction: column;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   color: white;
+  cursor: default;
 }
 
 #projects .project-info h1 {
@@ -668,7 +674,8 @@ p {
     padding: 20px 60px;
   }
   h1.section-title {
-    font-size: 6rem;
+    font-size: 5rem;
+    cursor: default;
   }
   /* Hero */
   #hero h1 {
