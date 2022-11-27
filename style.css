@@ -100,7 +100,7 @@ p {
 #header .header {
   min-height: 8vh;
   background-color: rgba(31, 30, 30, 0.24);
-  transition: 0.3s ease background-color;
+  transition: 0.3s ease-in-out background-color;
 }
 
 #header .nav-bar {
@@ -244,7 +244,6 @@ p {
   background-position: top center;
   position: relative;
   z-index: 1;
-
 }
 
 #hero::after {
@@ -649,28 +648,28 @@ p {
   border-color: #40b839;
   box-shadow: 0px 0px 15px #40b839;
   color: #40b839;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
 .facebook:hover {
   border-color: rgb(6, 45, 216);
   box-shadow: 0px 0px 15px rgb(6, 45, 216);
   color: rgb(6, 45, 216);
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
 .twitter:hover {
   border-color: rgb(73, 138, 223);
   box-shadow: 0px 0px 15px rgb(73, 138, 223);
   color: rgb(73, 138, 223);
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
 .instagram:hover {
   border-color: rgb(221, 86, 210);
   box-shadow: 0px 0px 15px rgb(221, 86, 210);
   color: rgb(221, 86, 210);
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
 /* End Footer */
@@ -842,7 +841,6 @@ p {
 /* Media Query For Desktop */
 
 @media only screen and (min-width: 1200px) {
-
   /* header */
   #header .hamburger {
     display: none;
