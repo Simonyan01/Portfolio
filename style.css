@@ -317,6 +317,13 @@ p {
 
 /* Services Section */
 
+#services .about-my-job {
+  position: relative;
+  bottom: 5px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
 #services .services {
   flex-direction: column;
   text-align: center;
@@ -335,7 +342,9 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 50px;
+  position: relative;
+  top: 70px;
+  width: 90%;
 }
 
 #services .service-item {
@@ -344,7 +353,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px;
   background-image: url(./img/img-1.png);
   background-size: cover;
@@ -352,6 +361,20 @@ p {
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+#services .service-bottom .second-item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#services .service-item .lira {
+  margin-bottom: 5px;
+}
+#services .service-item ul li {
+  font-size: 14px;
+  color: rgb(238, 238, 238);
+  position: relative;
+  top: 10px;
 }
 
 #services .service-item::after {
@@ -644,6 +667,9 @@ p {
   font-size: 20px;
 }
 
+.whatsapp {
+  color: black;
+}
 .whatsapp:hover {
   border-color: #40b839;
   box-shadow: 0px 0px 15px #40b839;
