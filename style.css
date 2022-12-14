@@ -10,6 +10,8 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -31,7 +33,7 @@ img {
 }
 
 p {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
@@ -40,9 +42,11 @@ p {
 }
 
 .section-title {
+  position: relative;
+  bottom: 20px;
   font-size: 4rem;
   font-weight: 300;
-  color: black;
+  color: rgb(255, 255, 255);
   margin-bottom: 50px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -52,7 +56,7 @@ p {
 .section-title span {
   color: crimson;
   position: relative;
-  left: -1rem;
+  left: 0;
 }
 
 .cta {
@@ -67,6 +71,7 @@ p {
   margin-top: 30px;
   margin-left: 40px;
   transition: 0.4s ease;
+  cursor: pointer;
   transition-property: background-color, color;
 }
 
@@ -82,6 +87,7 @@ p {
   display: flex;
   justify-content: center;
   letter-spacing: 1px;
+  outline-color: none;
 }
 
 .brand h1 span {
@@ -333,6 +339,7 @@ p {
   max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
+  background: #29323c;
 }
 
 #services .service-top {
@@ -509,6 +516,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px;
+  background: #29323c;
 }
 
 #about .col-left {
@@ -533,59 +541,10 @@ p {
 }
 
 #about .col-right .cta {
-  color: black;
+  color: rgb(255, 255, 255);
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
-}
-
-#about .col-left .about-img {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  border: 10px solid white;
-}
-
-#about .col-left .about-img::after {
-  content: "";
-  position: absolute;
-  left: -33px;
-  top: 19px;
-  height: 98%;
-  width: 98%;
-  border: 7px solid crimson;
-  z-index: -1;
-}
-
-/* End About Section */
-
-/* contact Section */
-
-#contact .contact {
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-#contact .contact-items {
-  /* max-width: 400px; */
-  width: 100%;
-}
-
-#contact .contact-item {
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 18px 0 #0000002c;
-  transition: 0.3s ease box-shadow;
 }
 
 #contact .contact-item:hover {
@@ -609,10 +568,6 @@ p {
   line-height: 2rem;
   font-weight: 200;
   cursor: default;
-}
-
-.bold {
-  font-family: "Montserrat", sans-serif;
 }
 
 /*End contact Section */
@@ -755,6 +710,28 @@ p {
   h1.section-title {
     font-size: 5rem;
     cursor: default;
+  }
+
+  .col-right {
+    position: relative;
+    top: 5rem;
+  }
+
+  .h1 {
+    position: relative;
+    left: 23rem;
+    font-weight: 400;
+    font-size: x-large;
+    font-family: cursive;
+    letter-spacing: 0.8px;
+  }
+
+  .h3 {
+    font-size: 16px;
+    font-family: "Montserrat";
+    letter-spacing: 0.8px;
+    line-height: 23px;
+    color: #fff;
   }
 
   /* Hero */
@@ -903,16 +880,3 @@ p {
 }
 
 /* End  Media Query For Desktop */
-
-.h1 {
-  position: relative;
-  left: 23rem;
-  font-size: x-large;
-  font-family: cursive;
-  letter-spacing: 0.8px;
-}
-.h3 {
-  font-size: 16px;
-  font-family: "Raleway";
-  letter-spacing: 0.8px;
-}
