@@ -46,7 +46,7 @@ p {
   bottom: 20px;
   font-size: 4rem;
   font-weight: 300;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin-bottom: 50px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -547,29 +547,38 @@ p {
   font-size: 2rem;
 }
 
+.contact-item {
+  position: relative;
+  left: 3rem;
+  transition: all 0.4s ease;
+}
+
 #contact .contact-item:hover {
   box-shadow: 0px 0px 5px 0 #0000002c;
 }
 
 #contact .icon {
-  width: 70px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  position: relative;
+  right: 14rem;
+  cursor: pointer;
 }
 
 #contact .contact-info h1 {
   font-size: 2.5rem;
-  font-weight: 200;
   margin-bottom: 5px;
 }
 
 #contact .contact-info h2 {
   font-size: 1.3rem;
   line-height: 2rem;
-  font-weight: 200;
-  cursor: default;
+  cursor: pointer;
 }
 
+h2{
+  font-weight: 900;
+  color: #000000;
+}
 /*End contact Section */
 
 /* Footer */
@@ -625,9 +634,6 @@ p {
   font-size: 20px;
 }
 
-.whatsapp {
-  color: black;
-}
 .whatsapp:hover {
   border-color: #40b839;
   box-shadow: 0px 0px 15px #40b839;
@@ -811,7 +817,7 @@ p {
   }
 
   #contact .contact-items {
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -819,7 +825,7 @@ p {
   }
 
   #contact .contact-item {
-    width: 30%;
+    width: 35%;
     margin: 0;
     flex-direction: row;
   }
