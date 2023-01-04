@@ -43,7 +43,7 @@ p {
 
 .section-title {
   position: relative;
-  bottom: 20px;
+  bottom: 60px;
   font-size: 4rem;
   font-weight: 300;
   color: rgb(0, 0, 0);
@@ -57,27 +57,6 @@ p {
   color: crimson;
   position: relative;
   left: 0;
-}
-
-.cta {
-  display: inline-block;
-  padding: 10px 30px;
-  color: white;
-  background-color: transparent;
-  border: 2px solid crimson;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 30px;
-  margin-left: 40px;
-  transition: 0.4s ease;
-  cursor: pointer;
-  transition-property: background-color, color;
-}
-
-.cta:hover {
-  color: white;
-  background-color: crimson;
 }
 
 .brand .name {
@@ -245,9 +224,9 @@ p {
 
 /* End Header section */
 
-/* Hero Section */
+/* Person Section */
 
-#hero {
+#person {
   background-image: url("https://images.squarespace-cdn.com/content/v1/5e2b0237a2dc434ac478d58a/1580661273979-GZ97Q8UF8JH0DJM2BU62/lubo-minar-q9hgGGMi0XA-unsplash.jpg?format=1500w");
   background-size: cover;
   background-position: top center;
@@ -255,7 +234,7 @@ p {
   z-index: 1;
 }
 
-#hero::after {
+#person::after {
   content: "";
   position: absolute;
   left: 0;
@@ -267,62 +246,84 @@ p {
   z-index: -1;
 }
 
-#hero .hero {
+#person .person {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
   justify-content: flex-start;
-  background-image: url("");
 }
 
-#hero h1 {
+#person h1 {
   display: block;
   width: fit-content;
-  font-size: 4rem;
+  font-size: 7rem;
   position: relative;
+  right: 10px;
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
   cursor: default;
 }
 
-#hero h1:nth-child(1) {
+#person h1:nth-child(1) {
   animation-delay: 1s;
 }
 
-#hero h1:nth-child(2) {
+#person h1:nth-child(2) {
   animation-delay: 2s;
 }
 
-#hero h1:nth-child(3) {
+#person h1:nth-child(3) {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
 }
 
-#hero h1 span {
+#person h1 span {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 0;
-  background-color: crimson;
+  background-color: rgb(177, 29, 58);
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
 
-#hero h1:nth-child(1) span {
+#person h1:nth-child(1) span {
+  background-color: rgb(214, 208, 208);
   animation-delay: 0.5s;
 }
 
-#hero h1:nth-child(2) span {
+#person h1:nth-child(2) span {
+  background-color: rgb(214, 208, 208);
   animation-delay: 1.5s;
 }
 
-#hero h1:nth-child(3) span {
+#person h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
 
-/* End Hero Section */
+.cta {
+  display: inline-block;
+  color: white;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-top: 70px;
+  margin-left: 25px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  transition-property: background-color, color;
+}
+
+.cta:hover {
+  color: white;
+  background-color: crimson;
+}
+
+/* End Person Section */
 
 /* Services Section */
 
@@ -336,9 +337,10 @@ p {
 #services .services {
   flex-direction: column;
   text-align: center;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 100px 0;
+  max-width: 1450px;
+  border-radius: 25px;
+  margin: 50px auto;
+  padding: 150px 0;
   background: #29323c;
 }
 
@@ -364,22 +366,22 @@ p {
   justify-content: center;
   flex-direction: column;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-image: url(./img/img-1.png);
   background-size: cover;
-  margin: 10px 5%;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 
 #services .service-bottom .second-item {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
 }
+
 #services .service-item .lira {
   margin-bottom: 5px;
 }
+
 #services .service-item ul li {
   font-size: 14px;
   color: rgb(238, 238, 238);
@@ -399,10 +401,18 @@ p {
   z-index: -1;
 }
 
-#services .service-bottom .icon {
-  height: 80px;
+#services .service-bottom .first-icon {
+  height: 100px;
   width: 80px;
   margin-bottom: 20px;
+}
+
+#services .service-bottom .second-icon {
+  height: 100px;
+  width: 80px;
+  position: relative;
+  bottom: 30px;
+  margin: 10px;
 }
 
 #services .service-item h2 {
@@ -430,7 +440,9 @@ p {
 }
 
 #projects .projects-header h1 {
-  margin-bottom: 50px;
+  position: relative;
+  bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 #projects .all-projects {
@@ -515,7 +527,7 @@ p {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 0 20px;
   background: #29323c;
 }
 
@@ -528,11 +540,12 @@ p {
   width: 100%;
 }
 
-#about .col-right h2 {
-  font-size: 1.8rem;
+#about .col-right .section-title {
+  font-size: 5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  margin-bottom: 10px;
+  position: relative;
+  top: 1rem;
   cursor: default;
 }
 
@@ -547,67 +560,92 @@ p {
   font-size: 2rem;
 }
 
-.contact-item {
-  position: relative;
-  left: 3rem;
-  transition: all 0.4s ease;
+/* End About section */
+
+/* Contact Section */
+
+#contact .contact-items {
+  gap: 60px;
 }
 
-#contact .contact-item:hover {
-  box-shadow: 0px 0px 5px 0 #0000002c;
+#contact .first-contact-item {
+  padding-left: 100px;
 }
 
-#contact .icon {
-  margin: 0 auto;
+#contact .second-contact-item {
+  padding-left: 50px;
+}
+
+#contact .third-contact-item {
+  padding-left: 80px;
+}
+
+#contact .contact-item {
   position: relative;
-  right: 14rem;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 15px 22px 0 rgb(124, 123, 123);
+  border-radius: 50px;
+  transition: 0.4s ease;
   cursor: pointer;
 }
 
-#contact .contact-info h1 {
+#contact .contact-item:hover {
+  box-shadow: 0 0 35px 0 rgb(29, 29, 29);
+}
+
+#contact .contact-info {
+  cursor: pointer;
+}
+
+#contact .contact-info .phone-number {
+  color: #000000;
   font-size: 2.5rem;
+  font-weight: 500;
   margin-bottom: 5px;
+  cursor: default;
+}
+#contact .contact-info .address {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  cursor: default;
+}
+#contact .contact-info .email {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  cursor: default;
 }
 
 #contact .contact-info h2 {
   font-size: 1.3rem;
-  line-height: 2rem;
+  line-height: 2.4rem;
   cursor: pointer;
-}
-
-h2{
   font-weight: 900;
   color: #000000;
 }
-/*End contact Section */
 
-/* Footer */
+/*End Contact Section */
+
+/* Footer Section */
 
 #footer {
-  background-image: linear-gradient(60deg, #29323c 0%, #546270 100%);
+  background-image: linear-gradient(60deg, #29323c 0%, #627180 100%);
 }
 
 #footer .footer {
-  min-height: 200px;
+  min-height: 120px;
   flex-direction: column;
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
-#footer h2 {
-  color: white;
-  font-weight: 500;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  margin-top: 30px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: center;
-  cursor: default;
-}
-
-.container1 {
-  height: 11%;
+.connection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -634,35 +672,52 @@ h2{
   font-size: 20px;
 }
 
+.facebook:hover {
+  border-color: #345394;
+  box-shadow: 0px 0px 20px rgba(103, 115, 165, 0.945);
+  transition: 0.4s ease;
+  color: #1d60cc;
+  background: linear-gradient(120deg, #0a399e, #ffffff);
+}
+
 .whatsapp:hover {
   border-color: #40b839;
   box-shadow: 0px 0px 15px #40b839;
   color: #40b839;
-  transition: 0.3s linear;
-}
-
-.facebook:hover {
-  border-color: rgb(6, 45, 216);
-  box-shadow: 0px 0px 15px rgb(6, 45, 216);
-  color: rgb(6, 45, 216);
-  transition: 0.3s linear;
-}
-
-.twitter:hover {
-  border-color: rgb(73, 138, 223);
-  box-shadow: 0px 0px 15px rgb(73, 138, 223);
-  color: rgb(73, 138, 223);
-  transition: 0.3s linear;
+  transition: 0.3s ease;
 }
 
 .instagram:hover {
-  border-color: rgb(221, 86, 210);
-  box-shadow: 0px 0px 15px rgb(221, 86, 210);
-  color: rgb(221, 86, 210);
-  transition: 0.3s linear;
+  border-color: #f09433;
+  box-shadow: 0px 0px 15px #e6683c;
+  transition: 0.4s ease;
+  background: -moz-linear-gradient(
+    40deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    40deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    40deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
 }
 
-/* End Footer */
+/* End Footer Section*/
 
 /* Keyframes */
 
@@ -703,8 +758,6 @@ h2{
   }
 }
 
-/* End Keyframes */
-
 /* Media Query For Tablet */
 
 @media only screen and (min-width: 768px) {
@@ -740,12 +793,6 @@ h2{
     color: #fff;
   }
 
-  /* Hero */
-  #hero h1 {
-    font-size: 7rem;
-  }
-
-  /* End Hero */
   /* Services Section */
   #services .service-bottom .service-item {
     flex-basis: 45%;
@@ -807,7 +854,8 @@ h2{
   }
 
   /* End About */
-  /* contact  */
+
+  /* Contact  */
   #contact .contact {
     flex-direction: column;
     padding: 100px 0;
@@ -845,10 +893,8 @@ h2{
     padding-left: 20px;
   }
 
-  /* End contact  */
+  /* End Contact  */
 }
-
-/* End Media Query For Tablet */
 
 /* Media Query For Desktop */
 
@@ -884,5 +930,3 @@ h2{
     margin: 1.5%;
   }
 }
-
-/* End  Media Query For Desktop */
